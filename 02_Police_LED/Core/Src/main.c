@@ -94,9 +94,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
-
-    // MAVİ LED 3 KEZ YANACAK
+// MAVİ LED 3 KEZ YANACAK
     
     for (int i = 0; i < 3; i++){
 
@@ -120,6 +118,10 @@ int main(void)
     }
 
     HAL_Delay(350);
+
+
+    /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
