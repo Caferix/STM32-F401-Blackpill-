@@ -1,0 +1,20 @@
+# Klasör bazlı engelleme
+**/Drivers/
+**/build/
+**/Debug/
+**/Release/
+
+# Dosya bazlı engelleme
+**/*.bin
+**/*.elf
+**/*.hex
+**/*.map
+**/*.o
+**/*.d
+**/*.su
+
+# IDE ayarları
+**/.settings/
+**/.metadata/
+**/.mxproject
+**/*.launch
