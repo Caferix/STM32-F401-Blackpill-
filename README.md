@@ -22,6 +22,8 @@ This repository contains embedded system projects developed with the STM32F401 s
 Each folder is a self-contained project with its own `Makefile`:
 
 - **01_Blinky** — Basic GPIO configuration and LED control.
+- **02_Police_Blinker** — Dual LED Siren Effect.
+- **03_DualMode_LED_Controller** 
 - *(Future projects will be added here: UART, ADC, I2C, etc.)*
 
 ### 🚀 Build & Flash Instructions
@@ -53,6 +55,8 @@ Bu depo, STM32F401 serisi mikrodenetleyici kullanarak geliştirdiğim gömülü 
 Her klasör bağımsız bir proje niteliğindedir ve kendi `Makefile` dosyasına sahiptir:
 
 - **01_Blinky** — Temel GPIO yapılandırması ve LED kontrolü.
+- **02_Police_Blinker** — Çift LED Polis Çakarı
+- **03_DualMode_LED_Controller** — Çift Modlu LED Kontrolü
 - *(Gelecek projeler buraya eklenecektir: UART, ADC, I2C vb.)*
 
 ### 🚀 Derleme ve Yükleme Talimatı
