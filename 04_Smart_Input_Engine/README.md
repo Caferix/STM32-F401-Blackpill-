@@ -1,4 +1,4 @@
-# 03\_Smart\_Button — Single Button FSM / Tek Buton Durum Makinesi
+# 04\_Smart\_Button — Single Button FSM / Tek Buton Durum Makinesi
 
 > 🇬🇧 [English](#english) | 🇹🇷 [Türkçe](#türkçe)
 
@@ -89,7 +89,7 @@ Bu proje, tek bir buton için yazılımsal debounce ve kısa/uzun basış tespit
 
 > *Önceki projelerde gecikme kontrolü için kullandığım HAL_Delay() fonksiyonunun, belirtilen süre boyunca işlemciyi kilitlediğini ve bu yaklaşımın gömülü yazılım dünyasında kesinlikle istenmeyen bir durum olduğunu öğrendim. İşlemcinin aynı anda birden fazla görev yapması gerektiği durumları düşündüğümüzde, kodun içinde kullandığımız ve donanımı tamamen kilitleyen bu fonksiyonun sistemin performansını ve verimliliğini ne kadar düşürebileceğini anlayabiliriz. Bu fonksiyon yerine, sistem başladığı andan itibaren çalışan bir kronometre gibi düşünülebilecek sistem saatinin o anki değerini getiren HAL_GetTick() fonksiyonunu kullanarak, donanımı kilitlemek yerine yazılımsal olarak gecikmeleri yönetmeyi öğrendim. Örneğin bir butona basıldığı anda alınan zaman verisi ve 50ms sonra alınan zaman verisi arasındaki farkı kontrol ederek butona basılma durumunun gürültülerden etkilenmemesini garanti altına almış oldum.*
 
-> *FSM yani Finite State Machine konusuna da giriş yapıp durum makinesi yazmayla ilgili de ön bilgi edindim. Bu projede asıl amacım software debounce yönetimi olduğu için kodun o kısımlarında yapay zekadan yardım aldım. Neyin nasıl çalıştığının satır satır anlamış olmamla birlikte, kendi elimle birkaç kez FSM yazmadan bu konuyu öğrendiğimi söyleyemeyeceğim.*
+> *FSM yani Finite State Machine konusuna da giriş yapıp durum makinesi yazmayla ilgili de ön bilgi edindim. Bu projede asıl amacım software debounce yönetimi olduğu için kodun o kısımlarında yapay zekadan yardım aldım. Neyin nasıl çalıştığının satır satır anlamış olmamla birlikte, kendi elimle birkaç kez FSM yazmadan bu konuyu tam olarak öğrendiğimi söyleyemeyeceğim.*
 
 > *FSM çalışmamış olmama rağmen ön bilgi olarak "State Leak" konusunda fikir sahibi oldum. State'ler arası geçişlerde değişkenlerin resetlenmediği durumlarda diğer durumların başlangıç değeri olarak önceki durumdan kalan değişkenleri kullanacağnı ve bunun da doğru çalışmayı engelleyeceğini öğrendim. (Durum sızıntısı)*
 
